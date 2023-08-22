@@ -36,7 +36,7 @@ The backend runs one server instance to which all players are connected. For the
 
 ---
 
->> When you just want to run the Prototypes Client and Server executables, its not neccessary to download the whole Project. You just have to download the `ProjectMassivePackaged_MediaNight` and `ProjectMassivePackaged_runWithoutDocker` folders.
+>> When you just want to run the Prototypes Client and Server executables, its not neccessary to download the whole Project. You just have to download the `ProjectMassivePackaged_MediaNight` and `ProjectMassivePackaged_runWithoutDocker` folders from the Cloud: https://cloud.mi.hdm-stuttgart.de/s/rsAEkMZfz3JHBww
 
 <br>
 
