@@ -35,8 +35,8 @@ The backend runs one server instance to which all players are connected. For the
 ## Installation
 
 ---
-
->> When you just want to run the Prototypes Client and Server executables, its not neccessary to download the whole Project. You just have to download the `ProjectMassivePackaged_MediaNight` and `ProjectMassivePackaged_runWithoutDocker` folders from the Cloud: https://cloud.mi.hdm-stuttgart.de/s/rsAEkMZfz3JHBww
+>> As Github has major difficulties in handling large binary files this project was created with Perforce, i decided to publish it nevertheless on Github too and worked around the upload issues via the following link to my Cloud directory. 
+In order to function properly you have to download the `ProjectMassivePackaged_MediaNight` and `ProjectMassivePackaged_runWithoutDocker` folders from the Cloud: https://cloud.mi.hdm-stuttgart.de/s/rsAEkMZfz3JHBww
 
 <br>
 
