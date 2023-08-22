@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: unreal-server
+  annotations:
+    autoscaling.k8s.io/vertical-pod-autoscaler-enabled: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: unreal-server
+  template:
+    metadata:
+      labels:
+        app: unreal-server
+      annotations:
+        autoscaling.k8s.io/vertical-pod-autoscaler-enabled: "true"
+    spec:
+      containers:
+        - name: unreal-server
+          image: de.icr.io/unreal/unreal-server
+          # imagePullPolicy: Never
+          ports:
+            - containerPort: 7777
+          # resources:
+          #   limits:
+          #     cpu: 4
+          #     memory: 8Gi
+---
+
+---
+# apiVersion: autoscaling.k8s.io/v1
+# kind: VerticalPodAutoscaler
+# metadata:
+#   name: unreal-server-vpa
+# spec:
+#   targetRef:
+#     apiVersion: apps/v1
+#     kind: Deployment
+#     name: unreal-server
+#   updatePolicy:
+#     updateMode: "Auto"
